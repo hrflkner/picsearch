@@ -1,6 +1,6 @@
 # picSearch
 
-Use the picSearch Microapp to connect to the Unsplash API
+Use the picSearch Microapp to search for images with the Unsplash API
 
 ## Instructions to Run
 
