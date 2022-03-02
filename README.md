@@ -2,6 +2,8 @@
 
 Use the picSearch Microapp to search for images with the Unsplash API
 
+<img src="picSearch-screenshot.jpg" alt="App Screenshot">
+
 ## Instructions to Run
 
 <ol>
