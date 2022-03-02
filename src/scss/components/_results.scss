@@ -1,0 +1,80 @@
+main {
+    /* Background Design */
+    background-image: radial-gradient(transparent -50%, black), 
+                        url(../images/camera-background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Fixed Background Positiion */
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+.searchbar {
+    /* Layout */
+    display: flow-root;
+    text-align: center;
+    padding: 10rem 0 6rem 0;
+}
+input, button {
+    /* (1/2) Consolidate Bars into One */
+    border: none;
+    background-color: white;
+}
+input {
+    /* Design */
+    height: 2.5rem;
+    width: 30rem;
+    border-radius: 3px;
+    padding-left: 1rem;
+}
+button {
+    /* (2/2) Consolidate Bars into One */
+    transform: translateX(-3.5rem);
+    height: 2rem;
+}
+.return-block {
+    /* Photo Grid Layout */
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(10, 420px);
+    grid-gap: 4rem;
+
+    /* Positioning */
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+img {
+    /* Resizing */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-info {
+    /* Layout */    
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-4rem);
+    padding: 0.25rem 1rem;
+
+    /* Design */
+    background-color: rgba(0, 0, 0, 0.75);
+
+    /* Typography */
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'EB Garamond', serif;
+    line-height: 1.2;
+
+    /* 
+    Prevent Long City Names
+    From Escaping Parent
+    */
+    white-space: nowrap;
+    overflow: hidden;
+}
+.photoblock:hover {
+    /* Focus Zoom */
+    display: block;
+    transform: scale(1.2);
+}

@@ -1,0 +1,46 @@
+header {
+    /* Layout */
+    position: fixed;
+    left: 0; 
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    z-index: 1000;
+
+    /* Design */
+    font-family: 'Smooch Sans', sans-serif;
+    color: white;
+    background-color: black;
+    border-bottom: 1px solid white;
+
+    & > * {
+        display: inline-block;
+    }
+}
+.logo {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        /* Layout */
+        list-style: none;
+    }
+    li {
+        padding: 0 1.5rem;
+    }
+}
